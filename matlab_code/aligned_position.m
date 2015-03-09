@@ -7,7 +7,7 @@ function [ position_array ] = aligned_position( width, height )
 %   so they are easier to close in Windows OS.
 %%%
 
-    dist_from_top = 200;
+    dist_from_top = 100;
     dist_from_right = 400;
 
     screen_size = get(groot,'ScreenSize');

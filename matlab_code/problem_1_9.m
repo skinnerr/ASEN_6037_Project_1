@@ -30,32 +30,26 @@ function [] = problem_1_9( HIT, HST, save_plots )
     %%%
     
     % Number of bins to use.
-    HIT_bins = 200;
-    HST_bins = 200;
+    num_bins = 1200;
+    histogram_radius = 6;
+    bin_edges = linspace(-histogram_radius,histogram_radius,num_bins+1);
     
     % Bin HIT data.
-    [HIT_dist,HIT_edges] = histcounts(uPrimeIso(:,:,:),HIT_bins, ...
+    HIT_dist = histcounts(uPrimeIso(:,:,:),bin_edges, ...
         'Normalization','probability');
     
     % Bin HST data.
-    HST_dist = zeros(129,HST_bins);
-    HST_edges = zeros(129,HST_bins+1);
+    HST_dist = zeros(129,num_bins);
     for j = 1:129
-        [HST_dist(j,:),HST_edges(j,:)] = ...
-            histcounts(uPrimeShear(:,j,:),HST_bins, ...
+        HST_dist(j,:) = ...
+            histcounts(uPrimeShear(:,j,:),bin_edges, ...
                 'Normalization','probability');
     end
     
     % Grab bin centers.
-    HIT_centers = zeros(1,HIT_bins);
-    for i = 1:HIT_bins
-        HIT_centers(i) = (HIT_edges(i)+HIT_edges(i+1))/2;
-    end
-    HST_centers = zeros(129,HST_bins);
-    for j = 1:129
-        for i = 1:HST_bins
-            HST_centers(j,i) = (HST_edges(j,i)+HST_edges(j,i+1))/2;
-        end
+    bin_centers = zeros(1,num_bins);
+    for i = 1:num_bins
+        bin_centers(i) = (bin_edges(i)+bin_edges(i+1))/2;
     end
     
     %%%
@@ -68,16 +62,16 @@ function [] = problem_1_9( HIT, HST, save_plots )
     % Loop over moments.
     for n = 1:4
         % Perform integration.
-        for i = 1:length(HIT_centers)
+        for i = 1:num_bins
             HIT_moments(n) = HIT_moments(n) + ...
-                HIT_centers(i)^n * HIT_dist(i);
+                bin_centers(i)^n * HIT_dist(i);
         end
         % Loop over slices.
         for j = 1:129
             % Perform integration.
-            for i = 1:length(HST_centers(j,:))
+            for i = 1:num_bins
                 HST_moments(j,n) = HST_moments(j,n) + ...
-                    HST_centers(j,i)^n * HST_dist(j,i);
+                    bin_centers(i)^n * HST_dist(j,i);
             end
         end
     end
@@ -121,15 +115,23 @@ function [] = problem_1_9( HIT, HST, save_plots )
             
             case 1 % Plot PDFs.
                 hold on;
-                plot(HIT_centers,HIT_dist,':','LineWidth',2);
-                plot(mean(HST_centers),mean(HST_dist),':','LineWidth',2);
+                plot(bin_centers, ...
+                    HIT_dist*(num_bins/(2*histogram_radius)), ...
+                    ':','LineWidth',2);
+                plot(bin_centers, ...
+                    mean(HST_dist*(num_bins/(2*histogram_radius))), ...
+                    ':','LineWidth',2);
                 legend('HIT','HST');
                 box on;
                 xlabel('u''');
                 ylabel('Probability Density');
-                text(-3.7,0.0135,'200 Bins');
-                xlim([-4,4]);
-                ylim([0,0.015]);
+%                 text(-3.25,1.7, ...
+%                     {[num2str(num_bins),' bins'], ...
+%                      ['over [',num2str(-histogram_radius),',', ...
+%                                num2str(histogram_radius),']']});
+                xlim([-3.5,3.5]);
+                ylim([0,2]);
+                set(gca,'XTick',-3:3);
                 hold off;
 
             case 2 % Second moment
