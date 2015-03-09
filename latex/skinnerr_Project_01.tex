@@ -196,7 +196,7 @@ Comparing the skewness and kurtosis of $u'$ for the two cases, it is apparent th
 \begin{figure}[t]
 \centering
 \includegraphics{prob1_9.pdf}
-%\\[6pt]
+\vspace{-6pt}
 \caption{Variance, skewness, and kurtosis of the isotropic (HIT) and shear (HST) fluctuation velocities. PDFs over the entire domain for both cases are included for qualitative reference, as are moments of an ideal Gaussian distribution. Shear moments are plotted as a function of $y$ as they are calculated using the PDF of $u'(y) = u - \expectation{u}_{xz}(y)$. Isotropic moments use $u' = u - \expectation{u}_{xyz}$, and are thus single-valued. For data processing, 1200 uniform bins over the interval $u' \in [-6,6]$ are used. However, the PDFs shown have been made independent of bin size, and reflect the continuous nature of the fluctuation velocities.}
 \label{fig:prob_1_9_skew_kurtosis}
 \end{figure}
@@ -207,19 +207,13 @@ Comparing the skewness and kurtosis of $u'$ for the two cases, it is apparent th
 
 From this plot, we can see that the PDFs of $u'$, $v'$, and $w'$ vary little between different values of $j$. Note that the difference in `roughness' is a direct consequence of sample size. The isotropic (HIT) PDFs appear similar to the shear (HST) PDFs, but the isotropic ones are better approximated by a Gaussian distribution, at least in the $x$- and $y$-directions. Both exhibit non-Gaussianity though: HIT has a far sharper peak at the center of the $v'$ distribution than a Gaussian would, and HST velocity fluctuations in the direction of applied shear ($u'$) are highly bimodal. The velocity magnitudes of the HST case, as has been previously discussed, have a wider range than the HIT case by about $6\times$.
 
-These plots confirm that turbulent statistics are highly non-Gaussian even in the isotropic case. The presence of mean shear increases the departure from Gaussian statistics, as evinced by the bimodal nature of the $u'$ PDFs. This \emph{suggests a disruption of the energy cascade} in flows with mean shear. That is, the preferential distribution of fluctuation velocities about two concentrations of equal non-zero magnitude suggests that they are ``bunching up'' there, and have a harder time transfering kinetic energy to smaller length-time scales.
-
-How do the PDFs in the HST case vary between the different values of j? How do the pdfs of
-the velocity components compare in the HIT and HST cases? What are the similarities and
-differences between the pdfs in the HIT and HST cases? How do the various pdfs compare to
-each other and to the Gaussian pdf? What do these results tell us about the statistics of the
-velocity in turbulent flows?
+These plots confirm that turbulent statistics are highly non-Gaussian, even in the isotropic case. The presence of mean shear increases the departure from Gaussian statistics, as evinced by the bimodal nature of the $u'$ PDFs. This \emph{suggests a disruption of the energy cascade} in flows with mean shear. That is, the preferential distribution of fluctuation velocities about two concentrations of equal non-zero magnitude suggests that they are ``bunching up'' there, and have a harder time transfering kinetic energy to smaller length-time scales.
 
 \begin{figure}[t]
 \centering
 \includegraphics{prob1_10.pdf}
-%\\[6pt]
-\caption{Awww snap.}
+\\[6pt]
+\caption{PDFs of fluctuation velocities (\legendline{blue,solid}), and corresponding Gaussian distributions (\legendline{orange,dashed}) with identical first and second moments for comparison. HIT statistics are calculated over the full domain, whereas HST statistics are shown in three different slice planes at $j = \{32,64,96\}$.}
 \label{fig:prob_1_10_fluctuation_pdfs}
 \end{figure}
 
@@ -252,14 +246,6 @@ velocity in turbulent flows?
 \section{Extra Credit: The Biot-Savart Integral}
 
 \section*{Appendex: \textsc{Matlab} Code}
-
-%\begin{wrapfigure}{R}{0.4\textwidth}
-%\begin{center}
-%\\[6pt]
-%\caption{Final pdf of $w$.}
-%\label{fig:q1_beta_prime}
-%\end{center}
-%\end{wrapfigure}
 
 %%
 %% DOCUMENT END

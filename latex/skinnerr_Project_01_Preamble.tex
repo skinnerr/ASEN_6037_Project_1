@@ -19,13 +19,13 @@
 \usepackage{calc}
 
 % Plotting and drawing
-%\usepackage{tikz} % This automatically loads graphicx!
+\usepackage{tikz} % This automatically loads graphicx!
 %\usetikzlibrary{calc} % For relative positions to defined coords
 %\usepackage{pgfplots} % Scientific plotting tools
 %\pgfplotsset{compat=1.7}
 
 % Graphics
-\usepackage{graphicx}
+%\usepackage{graphicx}
 %\usepackage[update,prepend]{epstopdf}
 \usepackage{titlesec}
 \usepackage{color}
@@ -34,7 +34,7 @@
 \usepackage{booktabs}
 
 % Figure placement
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
 
 % Code listings
 \usepackage{listings}
@@ -42,7 +42,7 @@
 
 % Tweaks for captions and enumerations
 \usepackage[labelfont=bf]{caption}
-\captionsetup[wrapfigure]{margin=0.5cm}
+%\captionsetup[wrapfigure]{margin=0.5cm}
 \usepackage{enumitem}
 \setlist[itemize]{itemsep=3pt,leftmargin=*,label=\textbullet}
 
@@ -123,6 +123,9 @@ framextopmargin=2pt
 %%
 %% COMMANDS
 %%
+
+% Draw legend lines for plots within the text. The \DeclareRobustCommand makes it work within figure captions.
+\DeclareRobustCommand{\legendline}[1]{\raisebox{2pt}{\tikz{\draw[line width=2pt,#1](0,0) -- (5mm,0);}}}
 
 % Superscript text: 1st, 2nd, 3rd, 4th
 \newcommand{\suptext}[1]{\ensuremath{^\text{#1}}\xspace}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  9 MAR 2015 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  9 MAR 2015 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,91 +493,85 @@ Package: xfrac 2014/05/04 v4728 L3 Experimental split-level fractions
 . 
 . Defining command \sfrac with sig. 'omom' on line 436.
 .................................................
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box46
-\beforetitleunit=\skip58
-\aftertitleunit=\skip59
-\ttl@plus=\dimen170
-\ttl@minus=\dimen171
-\ttl@toksa=\toks22
-\titlewidth=\dimen172
-\titlewidthlast=\dimen173
-\titlewidthfirst=\dimen174
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen170
+\pgfutil@tempdimb=\dimen171
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 137.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen175
-\lightrulewidth=\dimen176
-\cmidrulewidth=\dimen177
-\belowrulesep=\dimen178
-\belowbottomsep=\dimen179
-\aboverulesep=\dimen180
-\abovetopsep=\dimen181
-\cmidrulesep=\dimen182
-\cmidrulekern=\dimen183
-\defaultaddspace=\dimen184
-\@cmidla=\count139
-\@cmidlb=\count140
-\@aboverulesep=\dimen185
-\@belowrulesep=\dimen186
-\@thisruleclass=\count141
-\@lastruleclass=\count142
-\@thisrulewidth=\dimen187
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen188
-\WF@size=\dimen189
-\c@WF@wrappedlines=\count143
-\WF@box=\box47
-\WF@everypar=\toks23
-Package: wrapfig 2003/01/31  v 3.6
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count144
-\lst@gtempboxa=\box48
-\lst@token=\toks24
-\lst@length=\count145
-\lst@currlwidth=\dimen190
-\lst@column=\count146
-\lst@pos=\count147
-\lst@lostspace=\dimen191
-\lst@width=\dimen192
-\lst@newlines=\count148
-\lst@lineno=\count149
-\lst@maxwidth=\dimen193
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count150
-\lst@skipnumbers=\count151
-\lst@framebox=\box49
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/09/06 1.5e listings configuration
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box46
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+))
+Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifi
-er.sty
-Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
-source code
- (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen172
+\pgf@y=\dimen173
+\pgf@xa=\dimen174
+\pgf@ya=\dimen175
+\pgf@xb=\dimen176
+\pgf@yb=\dimen177
+\pgf@xc=\dimen178
+\pgf@yc=\dimen179
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count139
+\c@pgf@countb=\count140
+\c@pgf@countc=\count141
+\c@pgf@countd=\count142
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count143
+\pgfsyssoftpath@bigbuffer@items=\count144
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -588,39 +582,301 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-\netBracketCount@mlpr=\count152
-\blkLvl@mlpr=\count153
-\blkLvlAtClassdef@mlpr=\count154
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen180
+\pgfmath@count=\count145
+\pgfmath@box=\box47
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count146
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen181
+\pgf@picmaxx=\dimen182
+\pgf@picminy=\dimen183
+\pgf@picmaxy=\dimen184
+\pgf@pathminx=\dimen185
+\pgf@pathmaxx=\dimen186
+\pgf@pathminy=\dimen187
+\pgf@pathmaxy=\dimen188
+\pgf@xx=\dimen189
+\pgf@xy=\dimen190
+\pgf@yx=\dimen191
+\pgf@yy=\dimen192
+\pgf@zx=\dimen193
+\pgf@zy=\dimen194
+LaTeX Font Info:    Try loading font information for T1+qpl on input line 926.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/tex-gyre/t1qpl.fd
+File: t1qpl.fd 2009/09/25 v1.2 font definition file for T1/qpl
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen195
+\pgf@path@lasty=\dimen196
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+\pgf@shorten@end@additional=\dimen197
+\pgf@shorten@start@additional=\dimen198
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+\pgfpic=\box48
+\pgf@hbox=\box49
+\pgf@layerbox@main=\box50
+\pgf@picture@serial@count=\count147
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+\pgflinewidth=\dimen199
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+\pgf@pt@x=\dimen200
+\pgf@pt@y=\dimen201
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgf@pt@temp=\dimen256
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+\pgfarrowsep=\dimen257
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen258
+\pgf@sys@shading@range@num=\count148
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+\pgfexternal@startupbox=\box51
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+\pgfnodeparttextbox=\box52
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen259
+\pgf@nodesepend=\dimen260
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen261
+\pgffor@skip=\dimen262
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count149
+\pgfplotmarksize=\dimen263
+)
+\tikz@lastx=\dimen264
+\tikz@lasty=\dimen265
+\tikz@lastxsaved=\dimen266
+\tikz@lastysaved=\dimen267
+\tikzleveldistance=\dimen268
+\tikzsiblingdistance=\dimen269
+\tikz@figbox=\box53
+\tikz@figbox@bg=\box54
+\tikz@tempbox=\box55
+\tikz@tempbox@bg=\box56
+\tikztreelevel=\count150
+\tikznumberofchildren=\count151
+\tikznumberofcurrentchild=\count152
+\tikz@fig@count=\count153
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count154
+\pgfmatrixcurrentcolumn=\count155
+\pgf@matrix@numberofcolumns=\count156
+)
+\tikz@expandcount=\count157
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen270
+\ttl@minus=\dimen271
+\ttl@toksa=\toks34
+\titlewidth=\dimen272
+\titlewidthlast=\dimen273
+\titlewidthfirst=\dimen274
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen275
+\lightrulewidth=\dimen276
+\cmidrulewidth=\dimen277
+\belowrulesep=\dimen278
+\belowbottomsep=\dimen279
+\aboverulesep=\dimen280
+\abovetopsep=\dimen281
+\cmidrulesep=\dimen282
+\cmidrulekern=\dimen283
+\defaultaddspace=\dimen284
+\@cmidla=\count158
+\@cmidlb=\count159
+\@aboverulesep=\dimen285
+\@belowrulesep=\dimen286
+\@thisruleclass=\count160
+\@lastruleclass=\count161
+\@thisrulewidth=\dimen287
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count162
+\lst@gtempboxa=\box58
+\lst@token=\toks35
+\lst@length=\count163
+\lst@currlwidth=\dimen288
+\lst@column=\count164
+\lst@pos=\count165
+\lst@lostspace=\dimen289
+\lst@width=\dimen290
+\lst@newlines=\count166
+\lst@lineno=\count167
+\lst@maxwidth=\dimen291
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count168
+\lst@skipnumbers=\count169
+\lst@framebox=\box59
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifi
+er.sty
+Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
+source code
+\netBracketCount@mlpr=\count170
+\blkLvl@mlpr=\count171
+\blkLvlAtClassdef@mlpr=\count172
 \emHeight@mlpr=\skip60
 \jayDepth@mlpr=\skip61
 \sectionRuleOffset@mlpr=\skip62
-\toks@mlpr=\toks25
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+\toks@mlpr=\toks36
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen194
-\captionmargin@=\dimen195
-\captionwidth=\dimen196
-\caption@tempdima=\dimen197
-\caption@indent=\dimen198
-\caption@parindent=\dimen199
-\caption@hangindent=\dimen200
+\captionmargin=\dimen292
+\captionmargin@=\dimen293
+\captionwidth=\dimen294
+\caption@tempdima=\dimen295
+\caption@indent=\dimen296
+\caption@parindent=\dimen297
+\caption@hangindent=\dimen298
 )
-\c@ContinuedFloat=\count155
+\c@ContinuedFloat=\count173
 Package caption Info: listings package is loaded.
-Package caption Info: wrapfig package is loaded.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip63
-\enit@outerparindent=\dimen201
-\enit@toks=\toks26
-\enit@inbox=\box50
-\enitdp@description=\count156
+\enit@outerparindent=\dimen299
+\enit@toks=\toks37
+\enit@inbox=\box60
+\enitdp@description=\count174
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip64
@@ -658,11 +914,7 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Try loading font information for T1+qpl on input line 9.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tex-gyre/t1qpl.fd
-File: t1qpl.fd 2009/09/25 v1.2 font definition file for T1/qpl
-)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -712,18 +964,17 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count157
-Normal \dimen register pool exhausted, switching to extended pool.
-\scratchdimen=\dimen256
-\scratchbox=\box51
-\nofMPsegments=\count158
-\nofMParguments=\count159
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count160
-\MPscratchDim=\dimen257
-\MPnumerator=\count161
-\makeMPintoPDFobject=\count162
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count175
+\scratchdimen=\dimen300
+\scratchbox=\box61
+\nofMPsegments=\count176
+\nofMParguments=\count177
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count178
+\MPscratchDim=\dimen301
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -750,7 +1001,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count163
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count181
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -780,28 +1032,28 @@ Package microtype Info: Character `029' is missing
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../images/prob1_2_HIT.pdf, id=15, 216.81pt x 252.945pt>
+<../images/prob1_2_HIT.pdf, id=18, 216.81pt x 252.945pt>
 File: ../images/prob1_2_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_2_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_2_HIT.pdf used on input line 76.
 (pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
 
-<../images/prob1_2_HST.pdf, id=16, 216.81pt x 252.945pt>
+<../images/prob1_2_HST.pdf, id=19, 216.81pt x 252.945pt>
 File: ../images/prob1_2_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_2_HST.pdf>
 Package pdftex.def Info: ../images/prob1_2_HST.pdf used on input line 77.
 (pdftex.def)             Requested size: 216.80946pt x 252.94438pt.
 
-<../images/prob1_3_HIT.pdf, id=17, 469.755pt x 252.945pt>
+<../images/prob1_3_HIT.pdf, id=20, 469.755pt x 252.945pt>
 File: ../images/prob1_3_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_3_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_3_HIT.pdf used on input line 95.
 (pdftex.def)             Requested size: 441.3012pt x 252.94438pt.
 
-<../images/prob1_3_HST.pdf, id=18, 469.755pt x 252.945pt>
+<../images/prob1_3_HST.pdf, id=21, 469.755pt x 252.945pt>
 File: ../images/prob1_3_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_3_HST.pdf>
@@ -813,21 +1065,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2 <../images/prob1_2_HIT.pdf> <../images/prob1_2_HST.pdf>] [3 <../images/prob1
 _3_HIT.pdf> <../images/prob1_3_HST.pdf>]
-<../images/prob1_5_HIT.pdf, id=119, 469.755pt x 144.54pt>
+<../images/prob1_5_HIT.pdf, id=122, 469.755pt x 144.54pt>
 File: ../images/prob1_5_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_5_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_5_HIT.pdf used on input line 134.
 (pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
 
-<../images/prob1_5_HST.pdf, id=120, 469.755pt x 144.54pt>
+<../images/prob1_5_HST.pdf, id=123, 469.755pt x 144.54pt>
 File: ../images/prob1_5_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_5_HST.pdf>
 Package pdftex.def Info: ../images/prob1_5_HST.pdf used on input line 136.
 (pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
 
-<../images/prob1_6_HST.pdf, id=121, 469.755pt x 252.945pt>
+<../images/prob1_6_HST.pdf, id=124, 469.755pt x 252.945pt>
 File: ../images/prob1_6_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_6_HST.pdf>
@@ -837,7 +1089,7 @@ Package pdftex.def Info: ../images/prob1_6_HST.pdf used on input line 153.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images/prob1_7_HIT.pdf, id=122, 469.755pt x 252.945pt>
+<../images/prob1_7_HIT.pdf, id=125, 469.755pt x 252.945pt>
 File: ../images/prob1_7_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_7_HIT.pdf>
@@ -849,62 +1101,58 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <../images/prob1_5_HIT.pdf> <../images/prob1_5_HST.pdf>] [5 <../images/prob1
 _6_HST.pdf> <../images/prob1_7_HIT.pdf>]
-<../images/prob1_8.pdf, id=278, 469.755pt x 216.81pt>
+<../images/prob1_8.pdf, id=281, 469.755pt x 216.81pt>
 File: ../images/prob1_8.pdf Graphic file (type pdf)
 
 <use ../images/prob1_8.pdf>
 Package pdftex.def Info: ../images/prob1_8.pdf used on input line 184.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
  [6 <../images/prob1_8.pdf>]
-<../images/prob1_9.pdf, id=320, 469.755pt x 318.18875pt>
+<../images/prob1_9.pdf, id=323, 469.755pt x 318.18875pt>
 File: ../images/prob1_9.pdf Graphic file (type pdf)
 
 <use ../images/prob1_9.pdf>
 Package pdftex.def Info: ../images/prob1_9.pdf used on input line 198.
 (pdftex.def)             Requested size: 469.75386pt x 318.18796pt.
  [7 <../images/prob1_9.pdf>]
-<../images/prob1_10.pdf, id=336, 469.755pt x 397.485pt>
+<../images/prob1_10.pdf, id=339, 469.755pt x 397.485pt>
 File: ../images/prob1_10.pdf Graphic file (type pdf)
 
 <use ../images/prob1_10.pdf>
-Package pdftex.def Info: ../images/prob1_10.pdf used on input line 220.
+Package pdftex.def Info: ../images/prob1_10.pdf used on input line 214.
 (pdftex.def)             Requested size: 469.75386pt x 397.48402pt.
  [8 <../images/prob1_10.pdf>]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-
-
-Package caption Warning: Unused \captionsetup[wrapfigure] on input line 45.
-See the caption package documentation for explanation.
-
-[9] (./skinnerr_Project_01.aux) ) 
+ [9]
+(./skinnerr_Project_01.aux) ) 
 Here is how much of TeX's memory you used:
- 15704 strings out of 494835
- 278991 string characters out of 6174886
- 362036 words of memory out of 5000000
- 18671 multiletter control sequences out of 15000+600000
- 41368 words of font info for 82 fonts, out of 8000000 for 9000
+ 24938 strings out of 494835
+ 481774 string characters out of 6174886
+ 534409 words of memory out of 5000000
+ 27715 multiletter control sequences out of 15000+600000
+ 41102 words of font info for 80 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 42i,12n,54p,10488b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/
-dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex
--gyre/q-ec-sc.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on skinnerr_Project_01.pdf (9 pages, 922626 bytes).
+ 57i,12n,71p,10488b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
+s/tex-gyre/q-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex-gyr
+e/q-ec-sc.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on skinnerr_Project_01.pdf (9 pages, 922744 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
+ 392 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 13880 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 13892 words of extra memory for PDF output out of 14400 (max. 10000000)
 
