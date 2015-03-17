@@ -16,7 +16,9 @@ function [ Aij, Aij_mean ] = problem_2_1( HIT )
     
     for i = 1:3
         fprintf('Calculating A_%1ij...',i);
-        [grad_i1,grad_i2,grad_i3] = gradient(squeeze(HIT(i,:,:,:)));
+        % Note the transpose here, since gradient function flips x and y.
+        [grad_i1,grad_i2,grad_i3] = ...
+            gradient(permute(squeeze(HIT(i,:,:,:)),[2,1,3]));
         Aij(i,1,:,:,:) = reshape(grad_i1,[1,1,dims]);
         Aij(i,2,:,:,:) = reshape(grad_i2,[1,1,dims]);
         Aij(i,3,:,:,:) = reshape(grad_i3,[1,1,dims]);
@@ -32,7 +34,7 @@ function [ Aij, Aij_mean ] = problem_2_1( HIT )
     end
     end
     
-    % Calculate and report volume average of A_ij.
+    % Report volume average of A_ij.
     fprintf('Volume average of A_{ij} is as follows:\n');
     for i = 1:3
         fprintf('i = %1i, j = {1,2,3}:',i)
