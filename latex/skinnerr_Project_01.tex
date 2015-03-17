@@ -88,15 +88,15 @@ The isotropic (HIT) case has a much lower mean velocity and perhaps a larger vis
 
 Flow in the shear (HST) case is driven by opposing motion of the $y=0$ and $y=\pi$ bounding planes in the $i$-direction, and this manifests as a large velocity gradient of $u$ in all $xy$-slice planes. The velocities $v$ and $w$ are qualitatively similar, in that their distributions of velocities are similar. The only difference is that the structures in the $w$-field appear more elongated in the $i$-direction than those in the $v$-field at this instance in time.
 
-Within each case, the velocity components at slice planes $k=1$ and $k=256$ are identical. This implies use of periodic boundary conditions, at least on the $z$-normal domain boundaries. Periodic boundaries are likely used on all bounding planes for HIT, and on the $z$- and $x$-normal bounding planes for HST.
+Within each case, the velocity components at slice planes $k=1$ and $k=256$ are identical. This implies use of periodic boundary conditions, at least on the $z$-normal domain boundaries. Periodic boundaries are likely used on all bounding planes for HIT, and on the $z$- and $x$-normal bounding planes for HST. (We will see in a later part that the \emph{fluctuation} velocities are in fact periodic on all bounding faces for both HIT and HST.)
 
 \begin{figure}[h!]
 \centering
-\includegraphics[trim=1cm 0cm 0cm 0cm]{prob1_3_HIT.pdf}
+\includegraphics[trim=0.5cm 0cm 0cm 0cm]{prob1_3_HIT.pdf}
 \\
-\includegraphics[trim=1cm 0cm 0cm 0cm]{prob1_3_HST.pdf}
+\includegraphics[trim=0.5cm 0cm 0cm 0cm]{prob1_3_HST.pdf}
 \\[6pt]
-\caption{Cartesian velocity components $u_i$ in three slice planes for the isotropic (HIT) and shear (HST) cases.}
+\caption{Cartesian velocity components $u_i$ in three slice planes for the isotropic (HIT) and shear (HST) cases. Note that color scales are not identical between cases.}
 \label{fig:prob_1_3_slices}
 \end{figure}
 
@@ -127,7 +127,7 @@ u_i(i,j,k)
 .
 \end{equation}
 
-Carrying out this calculation, we obtain the results shown in \figref{fig:prob_1_5_xzaverages}. The isotropic (HIT) case has near-zero $xz$-average velocity in all Cartesian directions for all $y$. The shear (HST) case averages show $u$ varying linearly from $-3$ to $3$ as a function of $y$, whereas the other two components have zero average velocity, independent of $y$. Both observations confirm our expectations from the previous problem regarding homogeneous directions.
+Carrying out this calculation, we obtain the results shown in \figref{fig:prob_1_5_xzaverages}. The isotropic (HIT) case has near-zero $xz$-average velocity in all Cartesian directions for all $y$, though some minor fluctuations are observed in the $u$- and $w$-velocities. The shear (HST) case averages show $u$ varying linearly from $-3$ to $3$ as a function of $y$, whereas the other two components have zero average velocity, independent of $y$. Both observations confirm our expectations from the previous problem regarding homogeneous directions.
 
 \begin{figure}[t]
 \centering
@@ -135,7 +135,7 @@ Carrying out this calculation, we obtain the results shown in \figref{fig:prob_1
 \\
 \includegraphics{prob1_5_HST.pdf}
 \\[6pt]
-\caption{Velocity $xz$-averages as a function of $y$-position, all plotted on the same scale for the isotropic (HIT) and shear (HST) turbulence cases.}
+\caption{Velocity $xz$-averages as a function of $y$-position for the isotropic (HIT) and shear (HST) turbulence cases. Note the disparate scaling between cases.}
 \label{fig:prob_1_5_xzaverages}
 \end{figure}
 
@@ -158,7 +158,7 @@ are shown in \figref{fig:prob_1_6_slices}. Comparing this to \figref{fig:prob_1_
 
 \begin{figure}[h!]
 \centering
-\includegraphics[trim=1cm 0cm 0cm 0cm]{prob1_7_HIT.pdf}
+\includegraphics[trim=0.5cm 0cm 0cm 0cm]{prob1_7_HIT.pdf}
 \\[6pt]
 \caption{Cartesian velocity fluctuation components $u_i' = u_i - \texpectation{u_i}_{xyz}$ in three slice planes for the isotropic (HIT) case. Compare to \figref{fig:prob_1_3_slices}, which uses the same colorbar scale.}
 \label{fig:prob_1_7_slices}
@@ -220,6 +220,16 @@ These plots confirm that turbulent statistics are highly non-Gaussian, even in t
 \section{Analysis of Velocity Gradients in HIT}
 
 \subsection{}
+
+The volume average of the velocity gradient tensor is
+\[
+\expectation{A_{ij}}_{xyz} =
+\begin{bmatrix*}[r]
+ 1.2382\e{-02} &  2.7474\e{-08} &  7.3195\e{-06} \\
+-3.1956\e{-11} &  5.1524\e{-06} &  1.0050\e{-06} \\
+-1.9175\e{-02} & -1.0693\e{-05} & -1.4207\e{-08}
+\end{bmatrix*}
+\]
 
 \subsection{}
 

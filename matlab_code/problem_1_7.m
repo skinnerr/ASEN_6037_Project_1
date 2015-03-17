@@ -1,8 +1,8 @@
 function [] = problem_1_7( HIT, HST, save_plots )
 
     % Max/mins for all data for uniform colorbar scaling.
-    vel_max = 5.75;
-    vel_min = -5.75;
+    vel_max = 1.0;
+    vel_min = -1.0;
     colorbar_limits = [vel_min,vel_max];
 
     for simulation_case = {'HIT'}
@@ -87,7 +87,7 @@ function [] = problem_1_7( HIT, HST, save_plots )
             position = get(hsub(k_index,dim),'pos');
             % Make room for colorbar, and then shift if necessary.
             position = position .* [0.9, 1, 1.1, 1];
-            position = position + [-0.01,0.01,0,0];
+            position = position + [-0.03,0.01,0,0];
             position = position + (k_index-1)*[0,0.03,0,0];
             % Set position.
             set(hsub(k_index,dim),'pos',position)
@@ -97,7 +97,7 @@ function [] = problem_1_7( HIT, HST, save_plots )
 
         % Colorbar
         hbar = colorbar(); % Note: Not Planck's constant.
-        set(hbar,'Position',[0.88,0.17,0.03,0.75]+[-0.01,0.01,0,0]);
+        set(hbar,'Position',[0.88,0.17,0.03,0.75]+[-0.03,0.01,0,0]);
         ylabel(hbar,'Dimensionless Velocity Magnitude');
 
         if save_plots

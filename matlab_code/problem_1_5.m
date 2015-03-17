@@ -8,9 +8,13 @@ function [ xzAvg ] = problem_1_5( HIT, HST, save_plots )
         if (strcmp(simulation_case,'HIT'))
             vel = HIT;
             case_index = 1;
+            y_limits = [-0.05,0.05];
+            text_coords = [5,0.038];
         else
             vel = HST;
             case_index = 2;
+            y_limits = [-4,4];
+            text_coords = [5,3];
         end
 
         for j = 1:129
@@ -38,10 +42,10 @@ function [ xzAvg ] = problem_1_5( HIT, HST, save_plots )
             xlim([1,129]);
             set(gca,'XTick',[1,65,129]);
             set(gca,'XTickLabel',{'0','\pi/2','\pi'});
-            text(5,3, ...
+            text(text_coords(1),text_coords(2), ...
                 ['$\left<',char('u'+dim-1),'\right>_{xz}(y)$'], ...
                 'Interpreter','LaTeX');
-            ylim([-4,4]);
+            ylim(y_limits);
             if dim == 2
                 title(gca,char(simulation_case));
             end
@@ -59,8 +63,8 @@ function [ xzAvg ] = problem_1_5( HIT, HST, save_plots )
             % [left, bottom, width, height]
             position = get(hsub(dim),'pos');
             % Enlarge and shift subplots.
-            position = position .* [1.05, 2.5, 1.3, 0.7];
-            position = position + [-0.04,0,0,0];
+            position = position .* [1.05, 2.5, 1.15, 0.7];
+            position = position + [-0.04+(3-dim)*0.02,0,0,0];
             % Set position.
             set(hsub(dim),'pos',position)
 

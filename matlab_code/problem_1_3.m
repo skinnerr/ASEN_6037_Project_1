@@ -1,16 +1,21 @@
 function [] = problem_1_3( HIT, HST, save_plots )
 
     % Max/mins for all data for uniform colorbar scaling.
-    vel_max = 5.75;
-    vel_min = -5.75;
-    colorbar_limits = [vel_min,vel_max];
+    vel_max_iso = 1.0;
+    vel_min_iso = -1.0;
+    colorbar_limits_iso = [vel_min_iso,vel_max_iso];
+    vel_max_shear = 5.75;
+    vel_min_shear = -5.75;
+    colorbar_limits_shear = [vel_min_shear,vel_max_shear];
 
     for simulation_case = {'HIT','HST'}
 
         if (strcmp(simulation_case,'HIT'))
             vel = HIT;
+            colorbar_limits = colorbar_limits_iso;
         else
             vel = HST;
+            colorbar_limits = colorbar_limits_shear;
         end
 
         % Set size (inches) of PDF to output, and make figure.
@@ -74,7 +79,7 @@ function [] = problem_1_3( HIT, HST, save_plots )
             position = get(hsub(k_index,dim),'pos');
             % Make room for colorbar, and then shift if necessary.
             position = position .* [0.9, 1, 1.1, 1];
-            position = position + [-0.01,0.01,0,0];
+            position = position + [-0.03,0.01,0,0];
             position = position + (k_index-1)*[0,0.03,0,0];
             % Set position.
             set(hsub(k_index,dim),'pos',position)
@@ -84,7 +89,7 @@ function [] = problem_1_3( HIT, HST, save_plots )
 
         % Colorbar
         hbar = colorbar(); % Note: Not Planck's constant.
-        set(hbar,'Position',[0.88,0.17,0.03,0.75]+[-0.01,0.01,0,0]);
+        set(hbar,'Position',[0.88,0.17,0.03,0.75]+[-0.03,0.01,0,0]);
         ylabel(hbar,'Dimensionless Velocity Magnitude');
 
         if save_plots

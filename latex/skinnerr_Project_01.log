@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  9 MAR 2015 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  16 MAR 2015 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1051,105 +1051,100 @@ File: ../images/prob1_3_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_3_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_3_HIT.pdf used on input line 95.
-(pdftex.def)             Requested size: 441.3012pt x 252.94438pt.
+(pdftex.def)             Requested size: 455.52754pt x 252.94438pt.
 
 <../images/prob1_3_HST.pdf, id=21, 469.755pt x 252.945pt>
 File: ../images/prob1_3_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_3_HST.pdf>
 Package pdftex.def Info: ../images/prob1_3_HST.pdf used on input line 97.
-(pdftex.def)             Requested size: 441.3012pt x 252.94438pt.
+(pdftex.def)             Requested size: 455.52754pt x 252.94438pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2 <../images/prob1_2_HIT.pdf> <../images/prob1_2_HST.pdf>] [3 <../images/prob1
 _3_HIT.pdf> <../images/prob1_3_HST.pdf>]
-<../images/prob1_5_HIT.pdf, id=122, 469.755pt x 144.54pt>
+<../images/prob1_5_HIT.pdf, id=121, 469.755pt x 144.54pt>
 File: ../images/prob1_5_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_5_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_5_HIT.pdf used on input line 134.
 (pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
 
-<../images/prob1_5_HST.pdf, id=123, 469.755pt x 144.54pt>
+<../images/prob1_5_HST.pdf, id=122, 469.755pt x 144.54pt>
 File: ../images/prob1_5_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_5_HST.pdf>
 Package pdftex.def Info: ../images/prob1_5_HST.pdf used on input line 136.
 (pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
-
-<../images/prob1_6_HST.pdf, id=124, 469.755pt x 252.945pt>
+ [4 <../images/prob1_5_HIT.pdf> <../images/prob1_5_HST.pdf>] <../images/prob1_6
+_HST.pdf, id=208, 469.755pt x 252.945pt>
 File: ../images/prob1_6_HST.pdf Graphic file (type pdf)
 
 <use ../images/prob1_6_HST.pdf>
 Package pdftex.def Info: ../images/prob1_6_HST.pdf used on input line 153.
 (pdftex.def)             Requested size: 441.3012pt x 252.94438pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<../images/prob1_7_HIT.pdf, id=125, 469.755pt x 252.945pt>
+<../images/prob1_7_HIT.pdf, id=209, 469.755pt x 252.945pt>
 File: ../images/prob1_7_HIT.pdf Graphic file (type pdf)
 
 <use ../images/prob1_7_HIT.pdf>
 Package pdftex.def Info: ../images/prob1_7_HIT.pdf used on input line 161.
-(pdftex.def)             Requested size: 441.3012pt x 252.94438pt.
+(pdftex.def)             Requested size: 455.52754pt x 252.94438pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <../images/prob1_5_HIT.pdf> <../images/prob1_5_HST.pdf>] [5 <../images/prob1
-_6_HST.pdf> <../images/prob1_7_HIT.pdf>]
-<../images/prob1_8.pdf, id=281, 469.755pt x 216.81pt>
+<../images/prob1_8.pdf, id=210, 469.755pt x 216.81pt>
 File: ../images/prob1_8.pdf Graphic file (type pdf)
 
 <use ../images/prob1_8.pdf>
 Package pdftex.def Info: ../images/prob1_8.pdf used on input line 184.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
- [6 <../images/prob1_8.pdf>]
-<../images/prob1_9.pdf, id=323, 469.755pt x 318.18875pt>
+ [5 <../images/prob1_6_HST.pdf>]
+<../images/prob1_9.pdf, id=248, 469.755pt x 318.18875pt>
 File: ../images/prob1_9.pdf Graphic file (type pdf)
 
 <use ../images/prob1_9.pdf>
 Package pdftex.def Info: ../images/prob1_9.pdf used on input line 198.
 (pdftex.def)             Requested size: 469.75386pt x 318.18796pt.
- [7 <../images/prob1_9.pdf>]
-<../images/prob1_10.pdf, id=339, 469.755pt x 397.485pt>
+ [6 <../images/prob1_7_HIT.pdf>]
+<../images/prob1_10.pdf, id=286, 469.755pt x 397.485pt>
 File: ../images/prob1_10.pdf Graphic file (type pdf)
 
 <use ../images/prob1_10.pdf>
 Package pdftex.def Info: ../images/prob1_10.pdf used on input line 214.
 (pdftex.def)             Requested size: 469.75386pt x 397.48402pt.
- [8 <../images/prob1_10.pdf>]
+ [7 <../images/prob1_8.pdf>]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/qpl/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
- [9]
-(./skinnerr_Project_01.aux) ) 
+ [8 <../images/prob1_9.pdf>] [9 <../images/prob1_10.pdf>] (./skinnerr_Project_0
+1.aux) ) 
 Here is how much of TeX's memory you used:
  24938 strings out of 494835
  481774 string characters out of 6174886
- 534409 words of memory out of 5000000
+ 534422 words of memory out of 5000000
  27715 multiletter control sequences out of 15000+600000
  41102 words of font info for 80 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  57i,12n,71p,10488b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
-s/tex-gyre/q-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex-gyr
-e/q-ec-sc.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on skinnerr_Project_01.pdf (9 pages, 922744 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{
+/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}</usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on skinnerr_Project_01.pdf (9 pages, 1058962 bytes).
 PDF statistics:
  392 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams
