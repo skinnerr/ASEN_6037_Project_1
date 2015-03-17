@@ -38,7 +38,7 @@ In this project, we explore data from direct numerical simulation (DNS) of two t
 \end{alignat*}
 The data is non-dimensionalized by the length scale $L$ and the root mean square velocity $u_\text{rms}$, and we will treat the data ``as-is'' using this scaling. Both data sets are incompressible and have the same kinematic viscosity $\nu$ everywhere. The three Cartesian coordinates $\{x, y, z\}$ have corresponding data indices and velocity components $\{i, j, k\}$ and $\{u, v, w\}$, respectively. We will see that there are no significant velocity gradients in the HIT data, but that the HST data has a linear variation in mean velocity $\mean{u}$ as a function of $y$.
 
-All processing is carried out in \textsc{Matlab}, and a full code listing is included in the appendix to this document.
+All processing is carried out in \textsc{Matlab}, and a full code listing is included in a compressed directory associated with this document.
 
 \section{Comparison of Velocity Fields and Statistics in HIT and HST}
 
@@ -254,6 +254,14 @@ Volume average of the pseudo energy dissipation rate is
 
 \subsection{}
 
+\begin{figure}[t]
+\centering
+\includegraphics{prob2_5.pdf}
+\\[6pt]
+\caption{Slice of the normalized pseudo energy dissipation rate field $\epsilon / \expectation{\epsilon}_{xyz}$ at $k=128$.}
+\label{fig:prob_2_5_epsilon_normalized_slice}
+\end{figure}
+
 \subsection{}
 
 \subsection{}
@@ -269,8 +277,6 @@ Volume average of the pseudo energy dissipation rate is
 \subsection{}
 
 \section{Extra Credit: The Biot-Savart Integral}
-
-\section*{Appendex: \textsc{Matlab} Code}
 
 %%
 %% DOCUMENT END

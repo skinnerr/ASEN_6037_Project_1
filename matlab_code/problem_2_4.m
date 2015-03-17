@@ -18,8 +18,7 @@ function [ pseudo_diss, pseudo_diss_mean ] = problem_2_4( HIT )
     % Indexed by [x,y,z] indices.
     % Squeeze removes singleton dimensions that were eliminated by the
     %   tensor contraction.
-    pseudo_diss = 2*(sum(sum(Sij_prime .* Sij_prime))));
-    pseudo_diss = squeeze(pseudo_diss);
+	pseudo_diss = squeeze(2*sum(sum(Sij_prime.^2)));
     
     % Calculate volume average of the above.
     pseudo_diss_mean = mean(mean(mean(pseudo_diss)));

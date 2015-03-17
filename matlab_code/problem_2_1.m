@@ -16,9 +16,14 @@ function [ Aij, Aij_mean ] = problem_2_1( HIT )
     
     for i = 1:3
         fprintf('Calculating A_%1ij...',i);
-        % Note the transpose here, since gradient function flips x and y.
+        % Note the permute here, since gradient function flips x and y.
         [grad_i1,grad_i2,grad_i3] = ...
             gradient(permute(squeeze(HIT(i,:,:,:)),[2,1,3]));
+        % Undo the permute so we're back to x,y,z ordering.
+        grad_i1 = permute(grad_i1,[2,1,3]);
+        grad_i2 = permute(grad_i2,[2,1,3]);
+        grad_i3 = permute(grad_i3,[2,1,3]);
+        % Fill in the Aij tensor.
         Aij(i,1,:,:,:) = reshape(grad_i1,[1,1,dims]);
         Aij(i,2,:,:,:) = reshape(grad_i2,[1,1,dims]);
         Aij(i,3,:,:,:) = reshape(grad_i3,[1,1,dims]);
