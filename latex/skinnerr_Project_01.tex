@@ -254,6 +254,8 @@ Volume average of the pseudo energy dissipation rate is
 
 \subsection{}
 
+See \figref{fig:prob_2_5_epsilon_normalized_slice}.
+
 \begin{figure}[t]
 \centering
 \includegraphics{prob2_5.pdf}
@@ -264,11 +266,42 @@ Volume average of the pseudo energy dissipation rate is
 
 \subsection{}
 
-\subsection{}
+The average value of the enstrophy field is
+\[
+\expectation{\Omega}_{xyz} = 1.42
+.
+\]
 
 \subsection{}
 
+The analytical relation
+\[
+\expectation{\epsilon}_{xyz} = 2 \expectation{\Omega}_{xyz}
+,
+\]
+is borne out in our data, since $2.85 \approx 2(1.42)$.
+
 \subsection{}
+
+See \figref{fig:prob_2_8_omega_normalized_slice}.
+
+\begin{figure}[t]
+\centering
+\includegraphics{prob2_8.pdf}
+\\[6pt]
+\caption{Slice of the normalized enstrophy field $\Omega / \expectation{\Omega}_{xyz}$ at $k=128$.}
+\label{fig:prob_2_8_omega_normalized_slice}
+\end{figure}
+
+\subsection{}
+
+\begin{figure}[t]
+\centering
+\includegraphics{prob2_9.pdf}
+\\[6pt]
+\caption{PDFs of the normalized pseudo energy dissipation field $\epsilon / \expectation{\epsilon}_{xyz}$ and the normalized enstrophy field $\Omega / \expectation{\Omega}_{xyz}$ over the full fluid domain.}
+\label{fig:prob_2_9_energy_and_enstrophy_PDFs}
+\end{figure}
 
 \section{Advanced Topics}
 

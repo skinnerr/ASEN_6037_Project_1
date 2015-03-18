@@ -44,6 +44,8 @@ function [] = problem_1_8( HIT, HST, save_plots )
     end
     end
     
+    xyzAvgReynoldsIso
+    
     %%%
     % Get shear (HST) Reynolds stress averages.
     %%%
