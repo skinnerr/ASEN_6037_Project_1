@@ -81,7 +81,11 @@ function [] = problem_3_1( HIT, save_plots )
     plot(r,rho_avg,'-','LineWidth',2);
     plot(r,exp_fit,'--','LineWidth',1.5);
     plot(r,gauss_fit,':','LineWidth',1.5);
-    legend('Autocorrelation','Exponential Fit','Gaussian Fit');
+    plot(0.458*(256/(2*pi))*[1,1],[-0.3,1.1],'-','LineWidth',1);
+    plot(0.606*(256/(2*pi))*[1,1],[-0.3,1.1],'-','LineWidth',1);
+    legend('Zero', ...
+           'Autocorrelation','Exponential Fit','Gaussian Fit', ...
+           'Integral Scale','Taylor Scale');
     
     % Annotate plot.
     hold off;
@@ -92,6 +96,12 @@ function [] = problem_3_1( HIT, save_plots )
     set(gca,'XTick',[0,32,64,96,128]);
     set(gca,'XTickLabel',{'0','\pi/4','\pi/2','3\pi/4','\pi'});
     xlabel('r');
+    
+    % Reposition and resize plot..
+    % [left, bottom, width, height]
+    position = get(gca,'pos');
+    position = position + [0,0.05,0,-0.05];
+    set(gca,'pos',position)
 
     if save_plots
         % Save figures to file (dpdf = PDF file) (loose = uncropped)
