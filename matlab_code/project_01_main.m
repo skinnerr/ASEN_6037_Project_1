@@ -10,7 +10,7 @@ clearvars -except HIT HST
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Specify the problem number and whether to save plots.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-problem = '3.1';
+problem = '3.2';
 save_plots = true;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -94,6 +94,9 @@ switch problem
         
     case '3.1'
         problem_3_1(HIT, save_plots);
+        
+    case '3.2'
+        problem_3_2(HIT, save_plots);
 
     otherwise
         fprintf('Desired problem %i has no associated plots.\n',problem);

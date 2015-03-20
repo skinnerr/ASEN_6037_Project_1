@@ -9,8 +9,6 @@ function [] = problem_2_9( HIT, save_plots )
     [pseudo_diss, pseudo_diss_mean] = problem_2_4(HIT);
     % Calculate epsilon / <epsilon>_xyz.
     energy_norm = pseudo_diss / pseudo_diss_mean;
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     max_enst = max(max(max(enstrophy_norm(:,:,:))));
     min_enst = min(min(min(enstrophy_norm(:,:,:))));
@@ -26,10 +24,10 @@ function [] = problem_2_9( HIT, save_plots )
     %%%
     
     % Binning properties.
-    num_bins_enst = 300;
-    num_bins_ener = 300;
-    histogram_radius_enst = 3;
-    histogram_radius_ener = 3;
+    num_bins_enst = 2000;
+    num_bins_ener = 1000;
+    histogram_radius_enst = 40;
+    histogram_radius_ener = 20;
     bin_edges_enst = linspace(0,histogram_radius_enst,num_bins_enst+1);
     bin_edges_ener = linspace(0,histogram_radius_ener,num_bins_ener+1);
     
@@ -53,6 +51,9 @@ function [] = problem_2_9( HIT, save_plots )
     % Plot PDFs and Gaussian fits.
     %%%
     
+    % Double-check normalization.
+    fprintf('Integral of enst: %5e.\n',sum(bin_centers_enst .* dist_enst));
+    fprintf('Integral of ener: %5e.\n',sum(bin_centers_ener .* dist_ener));
     
     pdf_size = [6.5,3];
     h = figure('Position',aligned_position(...
