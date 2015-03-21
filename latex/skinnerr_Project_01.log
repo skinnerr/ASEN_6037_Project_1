@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  20 MAR 2015 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  20 MAR 2015 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1156,14 +1156,14 @@ File: ../images/prob3_1.pdf Graphic file (type pdf)
 <use ../images/prob3_1.pdf>
 Package pdftex.def Info: ../images/prob3_1.pdf used on input line 443.
 (pdftex.def)             Requested size: 469.75386pt x 180.67455pt.
-
-<../images/prob3_2.pdf, id=427, 361.35pt x 289.08pt>
+ [13 <../images/prob2_9.pdf>]
+<../images/prob3_2.pdf, id=460, 361.35pt x 289.08pt>
 File: ../images/prob3_2.pdf Graphic file (type pdf)
 
 <use ../images/prob3_2.pdf>
-Package pdftex.def Info: ../images/prob3_2.pdf used on input line 460.
+Package pdftex.def Info: ../images/prob3_2.pdf used on input line 466.
 (pdftex.def)             Requested size: 361.34912pt x 289.07928pt.
- [13 <../images/prob2_9.pdf>]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1191,7 +1191,7 @@ b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on skinnerr_Project_01.pdf (15 pages, 1302457 bytes).
+Output written on skinnerr_Project_01.pdf (15 pages, 1304430 bytes).
 PDF statistics:
  554 PDF objects out of 1000 (max. 8388607)
  355 compressed objects within 4 object streams

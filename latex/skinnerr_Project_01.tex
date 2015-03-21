@@ -430,10 +430,10 @@ For the integral scale, we set the upper bound of the integral to $\pi$, since i
 
 In addition to the autocorrelation and the two spatial scales, a Gaussian and an exponential fit to $\rho(r)$ are plotted in \figref{fig:prob_3_1_autocorrelation}. These fits are parameterized by the integral scale as
 \[
-\text{exponential} = \exp \left[ \frac{r}{\Lambda} \right]
+\text{Gaussian} = \exp \left[ - \frac{\pi}{4} \left( \frac{r}{\Lambda} \right)^2 \right]
 ,
 \qquad
-\text{Gaussian} = \exp \left[ - \frac{\pi}{4} \left( \frac{r}{\Lambda} \right)^2 \right]
+\text{exponential} = \exp \left[ \frac{r}{\Lambda} \right]
 .
 \]
 Because $\rho(r)$ is approximated much better by the Gaussian and the exponential, our Reynolds number must be fairly small.
@@ -442,7 +442,7 @@ Because $\rho(r)$ is approximated much better by the Gaussian and the exponentia
 \centering
 \includegraphics{prob3_1.pdf}
 \\[6pt]
-\caption{Blep.}
+\caption{Autocorrelation $\rho(r)$ of the HIT fluctuation $u$-velocities over the full domain. Exponential and Gaussian fits are shown, as well as calculated values of the integral scale $\Lambda$ and the Taylor scale $\lambda$. Domain from $\pi$ to $2\pi$ is ommitted since it mirrors the shown data over $r=\pi$.}
 \label{fig:prob_3_1_autocorrelation}
 \end{figure}
 
@@ -454,6 +454,12 @@ I(a,b) = \frac{\beta(a,b)}{\beta(a) \beta(b)}
 ,
 \end{equation}
 and $\beta$ denotes a probability density function. This figure tells us that spatially, large values of $\epsilon$ tend to correspond to large values of $\Omega$, and vice versa.
+
+As we covered in Homework 3 for this course, a stationary Burgers vortex is created through strain-diffusion equilibrium, that is, through local competition between the thinning of the vortical structure due to an axisymmetric strain rate field and the thickening effect due to diffusion. It can be shown that the vorticity field is Gaussian about the vortex' axis of symmetry, whereas the energy dissipation primarily occurs some radius away from the axis. Thus, we would expect the joint PDF of dissipation and enstrophy to be bi-modal, with some high-valued regions in the upper left and lower right corners of \figref{fig:prob_3_2_joint_pdf}.
+
+It may appear at first glance that \figref{fig:prob_3_2_joint_pdf} disagrees with this fundamental approximation of the tiny vortical structures in turbulent flows. This is not the case. If you look closely at \figref{fig:prob_2_5_epsilon_normalized_slice} and \figref{fig:prob_2_8_omega_normalized_slice}, it is clear that there are Burgers-like vortices, characterized by a high-vorticity core, and ringed by a small amount of dissipation. These structures seem relatively isolated, but that is not the norm for real turbulent flows, in which they interact and brush up against one another.
+
+As an example, consider two parallel vortices of equal sense that are positioned relatively close together. Two such vortices can be seen in the center of the $w'$ slice at $k=128$ in \figref{fig:prob_1_7_slices}. They create a huge velocity gradient between them, and thus a large amount of vorticity and dissipation. This is where we see the maxima on our enstrophy and dissipation slices. Because high enstrophy and high dissipation are approximately coincident in these interacting regions, they wash out the off-diagonal contributions of isolated vortical structures in the joint PDF.
 
 \begin{figure}[h]
 \centering
