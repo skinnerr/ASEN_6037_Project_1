@@ -233,7 +233,9 @@ The volume average of the velocity gradient tensor is
 \]
 For ideal HIT, we would expect to see
 \begin{equation}
-\expectation{A_{11}} = \expectation{A_{22}} = \expectation{A_{33}},
+\expectation{A_{11}} = \expectation{A_{22}} = \expectation{A_{33}}
+,
+\label{eq:on_diagonal_HIT}
 \end{equation}
 and that
 \begin{equation}
@@ -279,13 +281,11 @@ This quantity can be used to calculate the pseudo energy dissipation rate,
 
 Applying this calculation to our HIT data set, we find the volume average of the pseudo energy dissipation rate to be
 \[
-\boxed{\expectation{\epsilon}_{xyz}/\nu = 2.85}
+\boxed{\frac{\expectation{\epsilon}_{xyz}}{\nu} = 2.85}
 .
 \]
 
 \subsection{}
-
-\figref{fig:prob_2_5_epsilon_normalized_slice} shows a two-dimensional slice of the normalized pseudo energy dissipation rate field $\expectation{\epsilon}/\expectation{\epsilon}_{xyz}$ at $k=128$. If we compare this to the $u'_i$ velocity fields at $k=128$ in \figref{fig:prob_1_7_slices}, it is apparent that the local dissipation maxima are located in regions characterized by steep velocity gradients. For example, the dissipation maximum in \figref{fig:prob_2_5_epsilon_normalized_slice} can be attributed to the $w'$-velocity gradient in the $x$-direction located near $x=\pi$ and $y=2\pi/3$. This makes physical sense, because regions of high shear dissipate energy---the Burgers equation is a perfect example of this.
 
 \begin{figure}[t]
 \centering
@@ -294,6 +294,8 @@ Applying this calculation to our HIT data set, we find the volume average of the
 \caption{Slice of the normalized pseudo energy dissipation rate field $\epsilon / \expectation{\epsilon}_{xyz}$ at $k=128$.}
 \label{fig:prob_2_5_epsilon_normalized_slice}
 \end{figure}
+
+\figref{fig:prob_2_5_epsilon_normalized_slice} shows a two-dimensional slice of the normalized pseudo energy dissipation rate field $\expectation{\epsilon}/\expectation{\epsilon}_{xyz}$ at $k=128$. If we compare this to the $u'_i$ velocity fields at $k=128$ in \figref{fig:prob_1_7_slices}, it is apparent that the local dissipation maxima are located in regions characterized by steep velocity gradients. For example, the dissipation maximum in \figref{fig:prob_2_5_epsilon_normalized_slice} can be attributed to the $w'$-velocity gradient in the $x$-direction located near $x=\pi$ and $y=2\pi/3$. This makes physical sense, because regions of high shear dissipate energy---the Burgers equation is a perfect example of this.
 
 \subsection{}
 
@@ -320,16 +322,57 @@ For our HIT data set, we find the average value of the enstrophy field to be
 
 \subsection{}
 
-The analytical relation
-\[
-\expectation{\epsilon}_{xyz} = 2 \expectation{\Omega}_{xyz}
+Writing out the expressions for $\epsilon/\nu$ and $\Omega$ in terms of $A'_{ij}$, and subsequently averaging over space and employing relations \eqref{eq:on_diagonal_HIT} and \eqref{eq:off_diagonal_HIT}, as well as the moment relations in Section 6.2 of \textit{Dahm and Hamlington}, it is possible to arrive at the analytical expressions
+\begin{align}
+\frac{\expectation{\epsilon}_{xyz}}{\nu} &=
+6 \left[ \mean{A^2_{11}} + \mean{A^2_{12}} + \mean{A_{12} A_{21}} \right]
+\\
+\expectation{\Omega}_{xyz} &=
+3 \left[ \mean{A^2_{12}} - \mean{A_{12} A_{21}} \right]
+.
+\end{align}
+Combining these expressions yields the relationship
+\begin{equation}
+\frac{\expectation{\epsilon}_{xyz}}{\nu}
+=
+6 \left[ \mean{A^2_{11}} + \frac{\expectation{\Omega}_{xyz}}{3} + 2 \mean{A_{12} A_{21}} \right]
+\label{eq:full_dissipation_enstropy_relation}
+\end{equation}
+
+We now analyze each of these terms within the data set. For the first term, $\mean{A^2_{\alpha\alpha}}$, where no summation is implied over greek letters by convention, we calculate
+\begin{align}
+\mean{A^2_{11}} &= 0.273, \notag \\
+\mean{A^2_{22}} &= 0.160, \notag \\
+\mean{A^2_{33}} &= 0.272, \qquad
+\text{with an average of } 0.235.
+\label{eq:calculating_Aij_squared}
+\end{align}
+
+For the third term, we calculate $2\mean{A_{\alpha\beta}A_{\beta\alpha}}$, where $\alpha \neq \beta$. Our results are
+\begin{align}
+2\mean{A_{12} A_{21}} &= -0.160, \notag \\
+2\mean{A_{13} A_{31}} &= -0.385, \notag \\
+2\mean{A_{23} A_{32}} &= -0.156, \qquad
+\text{with an average of } -0.234.
+\label{eq:calculating_Aij_Aji_nosum}
+\end{align}
+
+Thus, the first and third terms on the right-hand side of \eqref{eq:full_dissipation_enstropy_relation} cancel out when we take full averages \emph{in our data set}. I have not been able to provide a compelling reason why this occurs, although it should be noted that our calculations in \eqref{eq:calculating_Aij_squared} and \eqref{eq:calculating_Aij_Aji_nosum} show that the turbulence is not very isotropic since the equivalence of second-order moments does not hold. We could hypothesize that the terms in question will always be of opposite sign and similar magnitude, but I would like to know the explicit reason if one exists.
+
+In any case, taking a full average of our data causes these terms to cancel, and \eqref{eq:full_dissipation_enstropy_relation} becomes
+\begin{equation}
+\expectation{\epsilon}_{xyz}
+\approx
+2 \expectation{\Omega}_{xyz}
 ,
-\]
-is borne out in our data, since $2.85 \approx 2(1.42)$.
+\end{equation}
+which is borne out in our data, since $2.85 \approx 2 \times 1.42$.
 
 \subsection{}
 
-See \figref{fig:prob_2_8_omega_normalized_slice}.
+A slice of the normalized enstrophy field at $k=128$ is presented in \figref{fig:prob_2_8_omega_normalized_slice}. We can draw comparisons between this field and our $u'_i$ field (\figref{fig:prob_1_7_slices}) and normalized dissipation field (\figref{fig:prob_2_5_epsilon_normalized_slice}).
+
+First of all, enstrophy is vorticity magnitude, and thus the enstrophy field highlights cores of vortical structures in the flow. These vortical structures can be seen in the $u'_i$ slices, and are clearly picked up by our enstrophy slice. Furthermore, most energy dissipation occurs some small radius away from the centers of these structures, as can be seen by comparing the enstrophy and dissipation fields. Of course, a transient shear layer will have high vorticity and also high dissipation, which explains the spatial coincidence of the maxima in  \figref{fig:prob_2_5_epsilon_normalized_slice} and \figref{fig:prob_2_8_omega_normalized_slice}.
 
 \begin{figure}[t]
 \centering
@@ -340,6 +383,12 @@ See \figref{fig:prob_2_8_omega_normalized_slice}.
 \end{figure}
 
 \subsection{}
+
+Probability density functions of $\epsilon / \texpectation{\epsilon}_{xyz}$ and $\Omega / \texpectation{\Omega}_{xyz}$ are displayed in \figref{fig:prob_2_9_energy_and_enstrophy_PDFs}. Both appear to approximate log-normal statistics, which is expected since they are multiplicative quantities.
+
+The normalized enstrophy field, which again corresponds to vorticity magnitude, is skewed heavily toward zero. We attribute this to the fact that vorticity is highly localized. Due to the Biot-Savart law, vorticity magnitudes are very small over most of the fluid domain since induced vorticities tend to cancel out away from vortex cores. This strong spatial concentration of enstrophy can be seen in \figref{fig:prob_2_8_omega_normalized_slice}.
+
+The normalized energy dissipation rate field has a more relaxed PDF, owing to the fact that energy dissipation is spread somewhat more evenly throughout the flow. Shear is a less localized quantity than vorticity magnitude, as can be seen in \ref{fig:prob_2_5_epsilon_normalized_slice}.
 
 \begin{figure}[t]
 \centering
@@ -353,7 +402,41 @@ See \figref{fig:prob_2_8_omega_normalized_slice}.
 
 \subsection{}
 
-Integral scale is 0.458. Taylor scale is 0.606. Taylor scale calcuated using a fourth-order one-sided difference approximation of the derivative $\partial \rho / \partial r$ evaluated at $r=0$.
+For the HIT case, we calculate the $u$-velocity autocorrelation function $\rho(r)$, defined as
+\begin{equation}
+\rho(r) \equiv
+\frac{\expectation{u'(x,y,z) u'(x+r,y,z)}_{xyz}}{\expectation{u'^2}_{xyz}}
+,
+\end{equation}
+taking periodic boundary conditions into account. Our results are presented over the domain $r \in [0,\pi]$, since $r=\pi$ is the farthest away from a point we can go in a $2\pi$-periodic domain before approaching at a radius $r < \pi$ from the opposite side.
+
+Our autocorrelation function is shown in \figref{fig:prob_3_1_autocorrelation}. From $\rho(r)$, we can calculate the corresponding spatial integral scale
+\begin{equation}
+\Lambda \equiv \int_0^\infty \rho(r) dr
+\approx
+\int_0^\pi \rho(r) dr
+=
+0.458
+,
+\end{equation}
+and the spatial Taylor scale $\lambda$, where
+\begin{equation}
+\lambda^2 \equiv -2 \left( \frac{d^2 p}{d r^2} \Big|_{r=0} \right)^{-1}
+\approx
+0.606
+.
+\end{equation}
+For the integral scale, we set the upper bound of the integral to $\pi$, since it is the largest possible radius in this periodic domain, as discussed above. It is difficult to define a true integral scale for this dataset. For the Taylor scale, we approximate the derivative using a fourth-order one-sided difference formula.
+
+In addition to the autocorrelation and the two spatial scales, a Gaussian and an exponential fit to $\rho(r)$ are plotted in \figref{fig:prob_3_1_autocorrelation}. These fits are parameterized by the integral scale as
+\[
+\text{exponential} = \exp \left[ \frac{r}{\Lambda} \right]
+,
+\qquad
+\text{Gaussian} = \exp \left[ - \frac{\pi}{4} \left( \frac{r}{\Lambda} \right)^2 \right]
+.
+\]
+Because $\rho(r)$ is approximated much better by the Gaussian and the exponential, our Reynolds number must be fairly small.
 
 \begin{figure}[t]
 \centering
@@ -365,15 +448,20 @@ Integral scale is 0.458. Taylor scale is 0.606. Taylor scale calcuated using a f
 
 \subsection{}
 
-\begin{figure}[t]
+The joint PDF of $\epsilon / \texpectation{\epsilon}_{xyz}$ and $\Omega / \texpectation{\Omega}_{xyz}$, normalized by the marginal product of their individual PDFs is presented in \figref{fig:prob_3_2_joint_pdf}. In short, we plot the quantity $I( \epsilon / \expectation{\epsilon}_{xyz}, \Omega / \texpectation{\Omega}_{xyz})$, where
+\begin{equation}
+I(a,b) = \frac{\beta(a,b)}{\beta(a) \beta(b)}
+,
+\end{equation}
+and $\beta$ denotes a probability density function. This figure tells us that spatially, large values of $\epsilon$ tend to correspond to large values of $\Omega$, and vice versa.
+
+\begin{figure}[h]
 \centering
 \includegraphics{prob3_2.pdf}
 \\[6pt]
-\caption{Blep.}
+\caption{Joint PDF of $\epsilon / \texpectation{\epsilon}_{xyz}$ and $\Omega / \texpectation{\Omega}_{xyz}$, normalized by the marginal product of both individual PDFs. Log axes are used since the component quantities approximate log-normal statistics.}
 \label{fig:prob_3_2_joint_pdf}
 \end{figure}
-
-\section{Extra Credit: The Biot-Savart Integral}
 
 %%
 %% DOCUMENT END

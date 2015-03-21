@@ -89,6 +89,10 @@ function [] = problem_3_2( HIT, save_plots )
     ylabel('\Omega / \langle\Omega\rangle_{xyz}');
     xlim([0,3]);
     ylim([0,3]);
+    set(gca,'XScale','log');
+    set(gca,'YScale','log');
+    set(gca,'XTick',[0.1,0.2,0.3,0.5,1,2,3]);
+    set(gca,'YTick',[0.1,0.2,0.3,0.5,1,2,3]);
     daspect([1,1,1]);
     hbar = colorbar();
     ylabel(hbar,['I(\epsilon / \langle\epsilon\rangle_{xyz},', ...

@@ -86,6 +86,9 @@ switch problem
     case '2.6'
         problem_2_6(HIT);
 
+    case '2.7'
+        problem_2_7(HIT);
+
     case '2.8'
         problem_2_8(HIT, save_plots);
 

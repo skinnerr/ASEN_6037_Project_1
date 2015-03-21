@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  20 MAR 2015 19:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.20)  20 MAR 2015 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1126,7 +1126,7 @@ Package pdftex.def Info: ../images/prob1_10.pdf used on input line 214.
 File: ../images/prob2_2.pdf Graphic file (type pdf)
 
 <use ../images/prob2_2.pdf>
-Package pdftex.def Info: ../images/prob2_2.pdf used on input line 253.
+Package pdftex.def Info: ../images/prob2_2.pdf used on input line 255.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
  [9 <../images/prob2_2.pdf>]
 <../images/prob2_5.pdf, id=353, 469.755pt x 216.81pt>
@@ -1135,62 +1135,66 @@ File: ../images/prob2_5.pdf Graphic file (type pdf)
 <use ../images/prob2_5.pdf>
 Package pdftex.def Info: ../images/prob2_5.pdf used on input line 292.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
- [10 <../images/prob2_5.pdf>]
-<../images/prob2_8.pdf, id=383, 469.755pt x 216.81pt>
+ [10 <../images/prob2_5.pdf>] [11]
+<../images/prob2_8.pdf, id=386, 469.755pt x 216.81pt>
 File: ../images/prob2_8.pdf Graphic file (type pdf)
 
 <use ../images/prob2_8.pdf>
-Package pdftex.def Info: ../images/prob2_8.pdf used on input line 336.
+Package pdftex.def Info: ../images/prob2_8.pdf used on input line 379.
 (pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
 
-<../images/prob2_9.pdf, id=384, 469.755pt x 216.81pt>
+<../images/prob2_9.pdf, id=387, 469.755pt x 144.54pt>
 File: ../images/prob2_9.pdf Graphic file (type pdf)
 
 <use ../images/prob2_9.pdf>
-Package pdftex.def Info: ../images/prob2_9.pdf used on input line 346.
-(pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
-
-<../images/prob3_1.pdf, id=385, 469.755pt x 216.81pt>
+Package pdftex.def Info: ../images/prob2_9.pdf used on input line 395.
+(pdftex.def)             Requested size: 469.75386pt x 144.53963pt.
+ [12 <../images/prob2_8.pdf>]
+<../images/prob3_1.pdf, id=426, 469.755pt x 180.675pt>
 File: ../images/prob3_1.pdf Graphic file (type pdf)
 
 <use ../images/prob3_1.pdf>
-Package pdftex.def Info: ../images/prob3_1.pdf used on input line 360.
-(pdftex.def)             Requested size: 469.75386pt x 216.80946pt.
- [11 <../images/prob2_8.pdf>]
-<../images/prob3_2.pdf, id=424, 361.35pt x 289.08pt>
+Package pdftex.def Info: ../images/prob3_1.pdf used on input line 443.
+(pdftex.def)             Requested size: 469.75386pt x 180.67455pt.
+
+<../images/prob3_2.pdf, id=427, 361.35pt x 289.08pt>
 File: ../images/prob3_2.pdf Graphic file (type pdf)
 
 <use ../images/prob3_2.pdf>
-Package pdftex.def Info: ../images/prob3_2.pdf used on input line 370.
+Package pdftex.def Info: ../images/prob3_2.pdf used on input line 460.
 (pdftex.def)             Requested size: 361.34912pt x 289.07928pt.
- [12 <../images/prob2_9.pdf>] [13 <../images/prob3_1.pdf> <../images/prob3_2.pd
-f>] (./skinnerr_Project_01.aux) ) 
+ [13 <../images/prob2_9.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <../images/prob3_1.pdf>] [15 <../images/prob3_2.pdf>]
+(./skinnerr_Project_01.aux) ) 
 Here is how much of TeX's memory you used:
- 24973 strings out of 494835
- 482620 string characters out of 6174886
- 534488 words of memory out of 5000000
- 27744 multiletter control sequences out of 15000+600000
- 37857 words of font info for 79 fonts, out of 8000000 for 9000
+ 24983 strings out of 494835
+ 482799 string characters out of 6174886
+ 534526 words of memory out of 5000000
+ 27748 multiletter control sequences out of 15000+600000
+ 38262 words of font info for 82 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  57i,12n,71p,10488b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/
-dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex
--gyre/q-ec-sc.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pf
-b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on skinnerr_Project_01.pdf (13 pages, 1288323 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvip
+s/tex-gyre/q-ec.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/tex-gyr
+e/q-ec-sc.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/tex-gyre/qplri.pfb>
+Output written on skinnerr_Project_01.pdf (15 pages, 1302457 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 351 compressed objects within 4 object streams
+ 554 PDF objects out of 1000 (max. 8388607)
+ 355 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  11874 words of extra memory for PDF output out of 12000 (max. 10000000)
 

@@ -24,10 +24,10 @@ function [] = problem_2_9( HIT, save_plots )
     %%%
     
     % Binning properties.
-    num_bins_enst = 2000;
-    num_bins_ener = 1000;
-    histogram_radius_enst = 40;
-    histogram_radius_ener = 20;
+    num_bins_enst = 310;
+    num_bins_ener = 310;
+    histogram_radius_enst = 3.1;
+    histogram_radius_ener = 3.1;
     bin_edges_enst = linspace(0,histogram_radius_enst,num_bins_enst+1);
     bin_edges_ener = linspace(0,histogram_radius_ener,num_bins_ener+1);
     
@@ -55,7 +55,7 @@ function [] = problem_2_9( HIT, save_plots )
     fprintf('Integral of enst: %5e.\n',sum(bin_centers_enst .* dist_enst));
     fprintf('Integral of ener: %5e.\n',sum(bin_centers_ener .* dist_ener));
     
-    pdf_size = [6.5,3];
+    pdf_size = [6.5,2];
     h = figure('Position',aligned_position(...
                           100*pdf_size(1),100*pdf_size(2)), ...
                'PaperUnits','inches', ...
@@ -78,6 +78,12 @@ function [] = problem_2_9( HIT, save_plots )
     xlim([0,3]);
     box on;
     ylabel('Probability Density');
+    
+    % Reposition and resize plot..
+    % [left, bottom, width, height]
+    position = get(gca,'pos');
+    position = position + [0,0.05,0,-0.05];
+    set(gca,'pos',position);
 
     if save_plots
         % Save figures to file (dpdf = PDF file) (loose = uncropped)
