@@ -197,7 +197,7 @@ Comparing the skewness and kurtosis of $u'$ for the two cases, it is apparent th
 \centering
 \includegraphics{prob1_9.pdf}
 \vspace{-6pt}
-\caption{Variance, skewness, and kurtosis of the isotropic (HIT) and shear (HST) fluctuation velocities. PDFs over the entire domain for both cases are included for qualitative reference, as are moments of an ideal Gaussian distribution. Shear moments are plotted as a function of $y$ as they are calculated using the PDF of $u'(y) = u - \expectation{u}_{xz}(y)$. Isotropic moments use $u' = u - \expectation{u}_{xyz}$, and are thus single-valued. For data processing, 1200 uniform bins over the interval $u' \in [-6,6]$ are used. However, the PDFs shown have been made independent of bin size, and reflect the continuous nature of the fluctuation velocities.}
+\caption{Variance, skewness, and kurtosis of the isotropic (HIT) and shear (HST) fluctuation velocities. PDFs over the entire domain for both cases are included for qualitative reference, as are moments of an ideal Gaussian distribution. Shear moments are plotted as a function of $y$ since they are calculated using the PDF of $u'(y) = u - \expectation{u}_{xz}(y)$. Isotropic moments use $u' = u - \expectation{u}_{xyz}$, and are thus single-valued. For data processing, 1200 uniform bins over the interval $u' \in [-6,6]$ are used. However, the PDFs shown have been made independent of bin size, and reflect the continuous nature of the fluctuation velocities.}
 \label{fig:prob_1_9_skew_kurtosis}
 \end{figure}
 
@@ -205,7 +205,7 @@ Comparing the skewness and kurtosis of $u'$ for the two cases, it is apparent th
 
 \figref{fig:prob_1_10_fluctuation_pdfs} shows the probability density functions of $u'$, $v'$, and $w'$ in the full volume for the isotropic (HIT) case, and in each of the three $xz$-planes at $j=\{32,64,96\}$ for the shear (HST) case. Gaussian distributions using the same mean and variance as each set of data are included for comparison.
 
-From this plot, we can see that the PDFs of $u'$, $v'$, and $w'$ vary little between different values of $j$. Note that the difference in `roughness' is a direct consequence of sample size. The isotropic (HIT) PDFs appear similar to the shear (HST) PDFs, but the isotropic ones are better approximated by a Gaussian distribution, at least in the $x$- and $y$-directions. Both exhibit non-Gaussianity though: HIT has a far sharper peak at the center of the $v'$ distribution than a Gaussian would, and HST velocity fluctuations in the direction of applied shear ($u'$) are highly bimodal. The velocity magnitudes of the HST case, as has been previously discussed, have a wider range than the HIT case by about $6\times$.
+From this plot, we can see that the PDFs of $u'$, $v'$, and $w'$ vary little qualitatively between different values of $j$. Note that the difference in `roughness' between HIT and HST plots is a direct consequence of different sample sizes filling a constant number of bins. The isotropic PDFs appear similar to the shear PDFs, but the isotropic ones are better approximated by a Gaussian distribution, at least in the $x$- and $z$-directions. Both exhibit non-Gaussianity though: HIT has a far sharper peak at the center of the $v'$ distribution than a Gaussian would, and HST velocity fluctuations in the direction of applied shear ($u'$) are highly bimodal. Note that the velocity magnitudes of the HST case, as has been previously discussed, have a wider range than the HIT case by about $6\times$.
 
 These plots confirm that turbulent statistics are highly non-Gaussian, even in the isotropic case. The presence of mean shear increases the departure from Gaussian statistics, as evinced by the bimodal nature of the $u'$ PDFs. This \emph{suggests a disruption of the energy cascade} in flows with mean shear. That is, the preferential distribution of fluctuation velocities about two concentrations of equal non-zero magnitude suggests that they are ``bunching up'' there, and have a harder time transfering kinetic energy to smaller length-time scales.
 
@@ -213,7 +213,7 @@ These plots confirm that turbulent statistics are highly non-Gaussian, even in t
 \centering
 \includegraphics{prob1_10.pdf}
 \\[6pt]
-\caption{PDFs of fluctuation velocities (\legendline{blue,solid}), and corresponding Gaussian distributions (\legendline{orange,dashed}) with identical first and second moments for comparison. HIT statistics are calculated over the full domain, whereas HST statistics are shown in three different slice planes at $j = \{32,64,96\}$.}
+\caption{PDFs of fluctuation velocities (\legendline{blue,solid}). Corresponding Gaussian distributions (\legendline{orange,dashed}) parameterized by identical first and second moments are included for comparison. HIT statistics are calculated over the full domain, whereas HST statistics are shown in three different slice planes at $j = \{32,64,96\}$.}
 \label{fig:prob_1_10_fluctuation_pdfs}
 \end{figure}
 
@@ -229,9 +229,24 @@ The volume average of the velocity gradient tensor is
  5.1524\e{-06} & -3.1956\e{-11} &  1.0050\e{-06} \\
 -1.0693\e{-05} & -1.9175\e{-02} & -1.4207\e{-08}
 \end{bmatrix*}
+.
 \]
+For ideal HIT, we would expect to see
+\begin{equation}
+\expectation{A_{11}} = \expectation{A_{22}} = \expectation{A_{33}},
+\end{equation}
+and that
+\begin{equation}
+\expectation{A_{12}} = \expectation{A_{13}} = \expectation{A_{21}} = \expectation{A_{23}} = \expectation{A_{31}} = \expectation{A_{32}}
+.
+\label{eq:off_diagonal_HIT}
+\end{equation}
+
+This relationship is roughly borne out by the data. Our diagonal values are very small compared to the mean velocity magnitudes we see in the HIT data, and are thus essentially zero. Magnitudes are similarly small on the off-diagonal, but it is difficult to say that relation \eqref{eq:off_diagonal_HIT} is entirely satisfied. As a whole, taking into acount the small magnitudes, the data appears to be reasonably isotropic.
 
 \subsection{}
+
+\figref{fig:prob_2_2_AijPrime_PDFs} shows PDFs of $A'_{11}$ and $A'_{12}$, and compares them to Gaussian distributions with matching first and second moments. It is clear that the fluctuating velocity gradients are highly non-gaussian, especially $A'_{11}$. This is to be expected, since the statistics of a turbulent flow quantity become increasingly less Gaussian when we take their derivatives. As a case in point, note that the PDF of $u'$ in \figref{fig:prob_1_10_fluctuation_pdfs} was rather well approximated by a Gaussian. The spatial derivatives of $u'$ shown here---in directions parallel and perpendicular to the velocity---are distinctly non-Gaussian however.
 
 \begin{figure}[t]
 \centering
@@ -243,18 +258,34 @@ The volume average of the velocity gradient tensor is
 
 \subsection{}
 
-Skew of $A'_{11}$ is -0.320. Kurtosis of $A'_{11}$ is 3.56.
+The skewness of $A'_{11}$ is -0.320, and the kurtosis of $A'_{11}$ is 3.56. Gaussian distributions have a skewness of 0 and a kurtosis of 3. This tells us that the statistics of velocity gradients in turbulent flows are more sharply peaked and can tend to favor a positive or negative velocity compared to Gaussian statistics.
 
 \subsection{}
 
-Volume average of the pseudo energy dissipation rate is
+The fluctuating strain rate field $S'_{ij}(x,y,z)$ is given by
+\begin{equation}
+S'_{ij}(x,y,z)
+=
+\frac{1}{2} \left[ A'_{ij}(x,y,z) + A'_{ji}(x,y,z) \right]
+,
+\end{equation}
+which is just the symmetric part of $A'_{ij}$.
+
+This quantity can be used to calculate the pseudo energy dissipation rate,
+\begin{equation}
+\epsilon/\nu \equiv 2 S'_{ij} S'_{ij}
+.
+\end{equation}
+
+Applying this calculation to our HIT data set, we find the volume average of the pseudo energy dissipation rate to be
 \[
-\expectation{\epsilon}_{xyz}/\nu = 2.85
+\boxed{\expectation{\epsilon}_{xyz}/\nu = 2.85}
+.
 \]
 
 \subsection{}
 
-See \figref{fig:prob_2_5_epsilon_normalized_slice}.
+\figref{fig:prob_2_5_epsilon_normalized_slice} shows a two-dimensional slice of the normalized pseudo energy dissipation rate field $\expectation{\epsilon}/\expectation{\epsilon}_{xyz}$ at $k=128$. If we compare this to the $u'_i$ velocity fields at $k=128$ in \figref{fig:prob_1_7_slices}, it is apparent that the local dissipation maxima are located in regions characterized by steep velocity gradients. For example, the dissipation maximum in \figref{fig:prob_2_5_epsilon_normalized_slice} can be attributed to the $w'$-velocity gradient in the $x$-direction located near $x=\pi$ and $y=2\pi/3$. This makes physical sense, because regions of high shear dissipate energy---the Burgers equation is a perfect example of this.
 
 \begin{figure}[t]
 \centering
@@ -266,9 +297,24 @@ See \figref{fig:prob_2_5_epsilon_normalized_slice}.
 
 \subsection{}
 
-The average value of the enstrophy field is
+We next calculate the fluctuating vorticity field
+\begin{equation}
+\omega'_i(x,y,z)
+=
+\epsilon_{ijk} A'_{kj}
+,
+\end{equation}
+and subsequently the enstrophy field,
+\begin{equation}
+\Omega(x,y,z)
+\equiv
+\frac{1}{2} \omega'_i \omega'_i
+.
+\end{equation}
+
+For our HIT data set, we find the average value of the enstrophy field to be
 \[
-\expectation{\Omega}_{xyz} = 1.42
+\boxed{\expectation{\Omega}_{xyz} = 1.42}
 .
 \]
 
